@@ -10464,7 +10464,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Taranium-libs:05A20L24P"
 			(at 313.69 220.98 0)
 			(effects
 				(font
