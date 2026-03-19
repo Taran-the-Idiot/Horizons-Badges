@@ -6940,7 +6940,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Taranium-libs:IND-SMD_L6.0-W6.0_FNR60XXS"
 			(at 375.92 242.57 0)
 			(effects
 				(font

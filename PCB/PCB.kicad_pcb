@@ -7880,6 +7880,132 @@
 			)
 		)
 	)
+	(footprint "Taranium-libs:IND-SMD_L6.0-W6.0_FNR60XXS"
+		(layer "F.Cu")
+		(uuid "aa4f6660-bee3-4adb-98f7-8147971b8663")
+		(at 124.6 75.6)
+		(property "Reference" "L1"
+			(at 0 -4.01 0)
+			(layer "F.SilkS")
+			(uuid "027860b9-0031-462b-8b65-6dad7eaaf697")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "L_Small"
+			(at 0 4.01 0)
+			(layer "F.Fab")
+			(uuid "fa718929-3a26-4410-82bd-222458ecaa57")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e96ae7a-15ce-4739-8d90-91781ec21e26")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor, small symbol"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "67d24f89-2449-4743-bfab-b78cee135aed")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/3eb1d702-267e-427c-8955-397bb80254c8")
+		(sheetname "/")
+		(sheetfile "PCB.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -1.69 -3)
+			(end 1.67 -3)
+			(stroke
+				(width 0.25)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6c34eb42-9027-4bf9-a365-e517e9bca0b1")
+		)
+		(fp_line
+			(start -1.67 3)
+			(end 1.69 3)
+			(stroke
+				(width 0.25)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6fcd0238-06e0-4348-9564-2a4d460aaad6")
+		)
+		(fp_circle
+			(center -3 -3)
+			(end -2.97 -3)
+			(stroke
+				(width 0.06)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "da2edf0b-2928-4a56-ab90-5f95f6b808f3")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "359b07bf-547c-44c8-9c04-c6d0b1d0a677")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -2.35 0.01)
+			(size 2.5 5.7)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 3 "+3V3")
+			(pintype "passive")
+			(uuid "9cafda39-2b33-442b-8f44-8b8c5362cdce")
+		)
+		(pad "2" smd rect
+			(at 2.35 -0.01)
+			(size 2.5 5.7)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 13 "Net-(D3-A)")
+			(pintype "passive")
+			(uuid "40b92c8c-549d-451a-86ed-1683d4351b23")
+		)
+		(embedded_fonts no)
+		(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/IND-SMD_L6.0-W6.0-H2.8.wrl"
+			(offset
+				(xyz 0 -0 -0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 270)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_01005_0402Metric"
 		(layer "F.Cu")
 		(uuid "ac500f06-a6de-4cb3-9de7-711f16643460")
@@ -10130,6 +10256,14 @@
 		(uuid "141eef8f-573e-47e1-b6a3-4938020485c0")
 	)
 	(segment
+		(start 122.25 79.149)
+		(end 115.3995 85.9995)
+		(width 0.4)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "1d548eca-b871-4b35-aed6-407ccc2c3c86")
+	)
+	(segment
 		(start 115.799 85.6)
 		(end 135.5 85.6)
 		(width 0.4)
@@ -10146,7 +10280,7 @@
 		(uuid "39f1c6e1-1f12-4567-88dc-f842e7da35eb")
 	)
 	(segment
-		(start 113 88.399)
+		(start 115.3995 85.9995)
 		(end 115.799 85.6)
 		(width 0.4)
 		(layer "F.Cu")
@@ -10202,12 +10336,28 @@
 		(uuid "8f6bef8e-f81c-45bd-b236-651bd6820c34")
 	)
 	(segment
+		(start 122.25 75.61)
+		(end 122.25 79.149)
+		(width 0.4)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "93048858-1ad2-4ea3-a7d5-acee1ad81baf")
+	)
+	(segment
 		(start 103.954416 84.3)
 		(end 103.81158 84.157164)
 		(width 0.4)
 		(layer "F.Cu")
 		(net 3)
 		(uuid "95abe868-2cec-4431-a704-d2543752b677")
+	)
+	(segment
+		(start 113 88.399)
+		(end 115.3995 85.9995)
+		(width 0.4)
+		(layer "F.Cu")
+		(net 3)
+		(uuid "a05a91c6-5f7d-4c45-82ae-aaf6e8061733")
 	)
 	(segment
 		(start 113 88.399)
@@ -10592,6 +10742,22 @@
 		(layer "F.Cu")
 		(net 13)
 		(uuid "5fa1fa9c-44e4-4668-9314-d8a0f9557f20")
+	)
+	(segment
+		(start 132.31 75.59)
+		(end 132.55 75.35)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 13)
+		(uuid "ae01b210-27b9-4692-a3f7-ad0c7b018987")
+	)
+	(segment
+		(start 126.95 75.59)
+		(end 132.31 75.59)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 13)
+		(uuid "c2bb2cb7-5abd-4d45-8467-2414b68e0947")
 	)
 	(segment
 		(start 75.8375 86.1)
