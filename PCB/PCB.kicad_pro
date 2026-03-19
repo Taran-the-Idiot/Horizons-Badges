@@ -502,7 +502,7 @@
     "netclass_patterns": [
       {
         "netclass": "POWER",
-        "pattern": "+5V"
+        "pattern": "VBUS"
       }
     ]
   },

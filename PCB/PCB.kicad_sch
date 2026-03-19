@@ -5789,6 +5789,28 @@
 		)
 		(uuid "ff0cfaf7-059b-4dd2-9624-dffa2d66efa6")
 	)
+	(global_label "SDA"
+		(shape input)
+		(at 481.33 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "068a89b7-0da2-45c9-9ab5-cf3a11d9a3af")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 487.8833 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SPI_Q0"
 		(shape input)
 		(at 430.53 106.68 180)
@@ -5855,7 +5877,7 @@
 			)
 		)
 	)
-	(global_label "SCLK"
+	(global_label "SCL"
 		(shape input)
 		(at 323.85 223.52 0)
 		(fields_autoplaced yes)
@@ -5867,7 +5889,7 @@
 		)
 		(uuid "434a84c5-30a0-4bbb-bec7-8da4b3e473d2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 331.6128 223.52 0)
+			(at 330.3428 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6053,7 +6075,7 @@
 			)
 		)
 	)
-	(global_label "SDI"
+	(global_label "SDA"
 		(shape input)
 		(at 323.85 226.06 0)
 		(fields_autoplaced yes)
@@ -6065,7 +6087,7 @@
 		)
 		(uuid "7779e00b-42ae-4827-a2ea-36c610a95185")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 329.9195 226.06 0)
+			(at 330.4033 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6115,6 +6137,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape input)
+		(at 481.33 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8b53dc64-79e1-4163-b4bd-e75bc16d9e20")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 487.8228 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -12108,7 +12152,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Taranium-libs:CRYSTAL-SMD_4P-L3.2-W2.5-BL"
 			(at 349.25 162.56 0)
 			(effects
 				(font
