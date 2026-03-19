@@ -503,10 +503,6 @@
       {
         "netclass": "POWER",
         "pattern": "+5V"
-      },
-      {
-        "netclass": "POWER",
-        "pattern": "+3V3"
       }
     ]
   },
