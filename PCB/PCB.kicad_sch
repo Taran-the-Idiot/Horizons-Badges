@@ -5347,28 +5347,6 @@
 			)
 		)
 	)
-	(global_label "BS"
-		(shape input)
-		(at 323.85 210.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "73c7baa7-8595-4041-b11c-b3f7784cb70b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 329.3147 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "SDI"
 		(shape input)
 		(at 323.85 226.06 0)
@@ -10464,7 +10442,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Taranium-libs:05A20L24P"
+		(property "Footprint" "Taranium-libs:FPC-SMD_24P-P0.50_05A20L24P"
 			(at 313.69 220.98 0)
 			(effects
 				(font
