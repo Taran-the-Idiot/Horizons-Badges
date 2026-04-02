@@ -8961,7 +8961,7 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R10"
-			(at 0 -1.17 0)
+			(at 0 1.13 0)
 			(layer "F.SilkS")
 			(uuid "7136b2d4-3b05-4b43-91d8-237ce888d424")
 			(effects
@@ -12315,30 +12315,6 @@
 	)
 	(gr_poly
 		(pts
-			(xy 84.089999 62.884999) (xy 58.690001 62.884999) (xy 58.690001 43.835001) (xy 84.089999 43.835001)
-		)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.Mask")
-		(uuid "24d717db-1f11-4602-b0cb-e74afcce6b0c")
-	)
-	(gr_poly
-		(pts
-			(xy 171.344211 60.384689) (xy 145.944213 60.384689) (xy 145.944213 41.334691) (xy 171.344211 41.334691)
-		)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.Mask")
-		(uuid "451b3c13-c63e-46a6-aab2-b49863a64c09")
-	)
-	(gr_poly
-		(pts
 			(xy 76.619407 48.89077) (xy 76.649567 48.907811) (xy 76.678154 48.936114) (xy 76.705343 48.975023)
 			(xy 76.75622 49.082024) (xy 76.803588 49.22355) (xy 76.848836 49.394339) (xy 76.893356 49.589127)
 			(xy 76.985773 50.029648) (xy 77.091959 50.503006) (xy 77.153693 50.738842) (xy 77.22304 50.967097)
@@ -12436,18 +12412,6 @@
 		(fill yes)
 		(layer "F.Mask")
 		(uuid "a4636dba-bab8-4d83-b1a3-c9700dc98da8")
-	)
-	(gr_poly
-		(pts
-			(xy 161.37 57.99) (xy 151.210001 57.99) (xy 151.210001 50.370001) (xy 161.37 50.370001)
-		)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.Mask")
-		(uuid "f2964559-d105-4b0c-8f9c-6e6138a3658d")
 	)
 	(gr_poly
 		(pts
@@ -12958,6 +12922,17 @@
 		(at 97.7 101.8 0)
 		(layer "F.SilkS")
 		(uuid "1a78df46-54a2-4820-88a6-273e2c3975c1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(gr_text "BOOT"
+		(at 118.3 101.85 0)
+		(layer "F.SilkS")
+		(uuid "e3d8f92b-b46c-4f46-9950-069488b414d5")
 		(effects
 			(font
 				(size 1 1)
@@ -19301,15 +19276,15 @@
 	)
 	(group ""
 		(uuid "9653fc1a-5720-482a-b9fc-db753712074a")
-		(members "451b3c13-c63e-46a6-aab2-b49863a64c09" "a4636dba-bab8-4d83-b1a3-c9700dc98da8")
+		(members "a4636dba-bab8-4d83-b1a3-c9700dc98da8")
 	)
 	(group ""
 		(uuid "d92b4017-7a80-4f68-ab83-3ea12336e2ff")
-		(members "24d717db-1f11-4602-b0cb-e74afcce6b0c" "a2c6dc76-4de9-47da-8af9-f1bf16c847a0")
+		(members "a2c6dc76-4de9-47da-8af9-f1bf16c847a0")
 	)
 	(group ""
 		(uuid "e7025391-b16f-4e5e-939c-7ec246674148")
-		(members "2110b651-86d2-4cf3-a962-6edb4d9de154" "f2964559-d105-4b0c-8f9c-6e6138a3658d")
+		(members "2110b651-86d2-4cf3-a962-6edb4d9de154")
 	)
 	(group ""
 		(uuid "5c5710fa-52ef-462b-ac02-75c7931ac807")
