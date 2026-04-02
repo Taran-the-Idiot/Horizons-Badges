@@ -10090,7 +10090,7 @@
 				)
 			)
 		)
-		(property "Value" "Button"
+		(property "Value" "BOOT"
 			(at 513.08 166.37 0)
 			(effects
 				(font
