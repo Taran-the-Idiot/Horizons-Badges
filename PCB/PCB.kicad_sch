@@ -13256,7 +13256,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "RP2040"
+		(property "Value" "C2040"
 			(at 352.6633 125.73 0)
 			(effects
 				(font
