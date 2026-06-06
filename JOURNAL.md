@@ -1,5 +1,9 @@
 # Horizons crux badges
 
+
+
+total time spent: 22 hours
+
 ## 29th of May
 
 Started work on the badges
@@ -151,18 +155,184 @@ routed the data lines to the microcontroller. I had to use 2 vias and rmove the 
 
 ![image](https://cdn.hackclub.com/019e9c25-26d5-7c0c-9f3a-3c652d6246a7/Screen%20Shot%202026-05-30%20at%202.11.48%20pm.png)
 
+Routed the rest of the e ink thingy. kinda feels messy but eh.
+
+![image](https://cdn.hackclub.com/019e9c25-ebae-7187-ad6b-30921f91bea6/Screen%20Shot%202026-05-30%20at%202.10.17%20pm.png)
+
+so the rese and res pins are actually different and I had them put down as the same on the schematic so I fixed that
+
+![image](https://cdn.hackclub.com/019e9c27-1040-7427-883e-f197e8f296b2/Screen%20Shot%202026-05-30%20at%202.15.59%20pm.png)
+
+I put the cap here
+
+![image](https://cdn.hackclub.com/019e9c27-5bfd-7a04-b025-b8a63d212cd2/Screen%20Shot%202026-05-30%20at%202.24.58%20pm.png)
+
+and routed with vias
+
+![image](https://cdn.hackclub.com/019e9c27-99b3-762b-895d-fd699e11a9c7/Screen%20Shot%202026-05-30%20at%202.31.57%20pm.png)
 
 
+I was also told that I did not need 3v3 traces that thick so i went and made thm all thin.
+
+![image](https://cdn.hackclub.com/019e9c2a-0a47-7457-9339-a038461b3217/Screen%20Shot%202026-05-30%20at%202.43.06%20pm.png)
 
 
+added a pour and thats the routing done
+
+Time spent: 3 hours
 
 ## 31st of May
 
 
+![image](https://cdn.hackclub.com/019e9c2a-a502-7829-9f62-51b00d73e9ea/Screen%20Shot%202026-05-31%20at%208.52.52%20pm.png)
 
+I now have access to the art and shall begin tracing and porting everything over to kicad. since its a png and all on one layer, I need to separate it and turn it into an svg
 
-
+This is like a really stupidly long process that includes putting down a bunch of spline points and adjusting the spline to fit all the curves and stuff
 
 
 
 ![image](https://cdn.hackclub.com/019e7daa-7c59-75b3-9573-2a29bc555f36/paste-1780224783719.png)
+
+I did the cutlines, imported it into kicad and now it looks like this
+
+
+![image](https://cdn.hackclub.com/019e9c2b-e314-7bd6-8c21-c5878abd3e88/Screen%20Shot%202026-05-31%20at%209.58.47%20pm.png)
+
+I did the top mask layer
+
+![image](https://cdn.hackclub.com/019e9c2d-fdf2-7aa1-a49e-9cafd06fad6d/Screen%20Shot%202026-05-31%20at%209.59.44%20pm.png)
+
+Importing it in, it looks like this now. it was a bit difficult to line it up properly though
+
+![image](https://cdn.hackclub.com/019e9c2e-88da-7e8d-ae34-61d4376656de/Screen%20Shot%202026-05-31%20at%2010.15.17%20pm.png)
+
+starting top silkscreen and did one of the jellyfish. this is how many points there are. its actually such a pain. trick to doing this though is to just put a point at all the corners and points where the curve changes. and then use the line curve tool to make it match the curve its on. you could make a million points but imo this is quicker
+
+
+![image](https://cdn.hackclub.com/019e9c30-b3c8-7ef6-9462-279afa464a34/Screen%20Shot%202026-05-31%20at%2010.32.13%20pm.png)
+
+
+did the top thing 
+
+gonna just image dump since its all pretty repetitive anyways
+
+![image](https://cdn.hackclub.com/019e9c31-1588-7b5e-a187-ec1698bdc32d/Screen%20Shot%202026-05-31%20at%2010.51.15%20pm.png)
+
+![image](https://cdn.hackclub.com/019e9c31-9476-7639-b426-c9bd072b1fe2/Screen%20Shot%202026-05-31%20at%2010.52.44%20pm.png)
+
+![image](https://cdn.hackclub.com/019e9c31-b377-70d6-90f4-777213a7c967/Screen%20Shot%202026-05-31%20at%2011.15.44%20pm.png)
+
+
+
+Done that layer. on to the next
+
+I also added that dot at the top as a reference dot. since kicad imports all the layers and uses different centre points for each layer, I added the dot so i could export it with every layer and use it to line everything up.
+
+
+![image](https://cdn.hackclub.com/019e9c33-0ae7-7343-b845-d186a14b7cfd/Screen%20Shot%202026-05-31%20at%2011.40.06%20pm.png)
+
+Starting on the other layer, some of the stuff already matches so saves a bit of time for me, other stuff I need to still do/edit though
+
+
+
+![image](https://cdn.hackclub.com/019e9c34-3920-79b0-86a5-7257f593ad2c/Screen%20Shot%202026-06-01%20at%209.26.20%20am.png)
+
+yeah this side is going to be like 10x harder than the last one
+
+I just put down all the points first and will now be smoothing this whole thing out
+
+Time spent: 3.5 hours
+
+## 1st-2nd of June
+
+![image](https://cdn.hackclub.com/019e9c34-5536-7979-a9cd-93ce50f97408/Screen%20Shot%202026-06-02%20at%2011.14.36%20pm.png)
+
+I spent these 2 days doing this and didnt really take any other ss because its all the same repetitive thing anyways
+
+![image](https://cdn.hackclub.com/019e9c36-e227-7b46-9fc0-69c8f8125516/Screen%20Shot%202026-06-02%20at%2011.19.34%20pm.png)
+
+mask layer ^^
+
+![image](https://cdn.hackclub.com/019e9c37-1831-788b-9cd7-b34d122a84ae/Screen%20Shot%202026-06-02%20at%2011.19.42%20pm.png)
+
+Silkscreen layer ^^^^^^
+
+Time spent over those 2 days: 7 hours
+
+## 3rd of June
+
+![image](https://cdn.hackclub.com/019e9c37-6c00-7451-970d-7aac1aae46a7/Screen%20Shot%202026-06-03%20at%203.38.49%20pm.png)
+
+Imported the layers into kicad and noticed some errors so i fixed them up manually. it was only like a 0.05mm gap but eh. helps sooth my ocd
+
+![image](https://cdn.hackclub.com/019e9c39-1f1a-721e-8cc1-68a6dc949481/Screen%20Shot%202026-06-03%20at%204.02.54%20pm.png)
+
+this is the final badge design!
+
+(low quality image because this is the plugged into jlc version that shows the mask properly since kicad doesnt delete any silkscreen with bare copper underneath it.)
+
+after that just finished the bom and got the jlc price
+
+Time spent: 1.5 hours
+
+
+## 5th of June
+
+I went and got a design review from cyao, he gave me a whole essay of stuff to fix
+
+
+![image](https://cdn.hackclub.com/019e9c3a-643c-74d0-85fd-9ef6736766d8/Screen%20Shot%202026-06-05%20at%2010.31.30%20pm.png)
+
+
+changed these to 90. my references were wrong
+
+![image](https://cdn.hackclub.com/019e9c60-07be-78ce-816d-2d146acbb0a9/Screen%20Shot%202026-06-05%20at%2010.31.35%20pm.png)
+
+Fixed this up because I missed some stuff plus had some wrong numbers or the datasheet was wrong or smth idk
+
+![image](https://cdn.hackclub.com/019e9c60-c2ea-7fc1-8d93-9c3ef6bc0cd7/Screen%20Shot%202026-06-05%20at%2010.31.40%20pm.png)
+
+changed the model of this to a cheaper one
+
+
+![image](https://cdn.hackclub.com/019e9c61-261a-7ba8-9054-95fea3e370fa/Screen%20Shot%202026-06-05%20at%2011.17.14%20pm.png)
+
+
+Swapped to a footprint with thermal relief vias
+
+![image](https://cdn.hackclub.com/019e9c61-b75b-7091-b680-d3db1615b186/Screen%20Shot%202026-06-05%20at%2011.35.02%20pm.png)
+
+was told to add more vias for ground near the port and also added an amogus
+
+made some other smaller changes
+
+Time Spent: 2 hours
+
+
+## 6th of june
+
+Made some more changes from the cyao feedback
+
+
+![image](https://cdn.hackclub.com/019e9c62-69e1-7fa9-a1e5-58a50df05c46/Screen%20Shot%202026-06-06%20at%203.27.01%20pm.png)
+
+
+
+![image](https://cdn.hackclub.com/019e9c62-856d-72b5-8c42-f0cecff2153c/Screen%20Shot%202026-06-06%20at%203.27.03%20pm.png)
+
+added a power plane for 3v3. was have made it the entire top layer but i have a lot of exposed copper so it might be dangerous or easily short and it really isnt needed in the places where there isnt any electronics so I just put it there so its better
+
+I had to fiddle a lot with all the traces and stuff and how to actually implement the pour. I did some research and ended up with this. There was also a lot of re-routing and stuff, I had to move around a bunch of the parts for the e ink thing to fit in the extra 3 capacitors and I also needed to move stuff around because of the pour change and ground all needing to be routed differently. 
+
+![image](https://cdn.hackclub.com/019e9c82-856a-7b5c-b0a6-8e0c0430c165/Screen%20Shot%202026-06-06%20at%203.28.43%20pm.png)
+
+
+I went and changed up the names for everything on my schematic to include lcsc part numbers and also to change the 0.1uf caps into 100nf caps since they always error out jlc
+
+Need to get another review now
+
+Time spent: 4 hours
+
+
+
