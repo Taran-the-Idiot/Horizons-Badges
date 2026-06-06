@@ -7353,7 +7353,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "C720477"
 			(at 312.42 35.56 0)
 			(effects
 				(font
@@ -7695,7 +7695,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "100nf"
 			(at 402.59 21.5962 0)
 			(effects
 				(font
@@ -8923,7 +8923,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_C_Receptacle_USB2.0_14P"
+		(property "Value" "C309365"
 			(at 33.02 34.29 0)
 			(effects
 				(font
@@ -9031,7 +9031,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "100nf"
 			(at 318.77 21.5962 0)
 			(effects
 				(font
@@ -9365,7 +9365,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "100nf"
 			(at 250.1963 22.86 90)
 			(effects
 				(font
@@ -9567,7 +9567,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "100nf"
 			(at 354.33 21.5962 0)
 			(effects
 				(font
@@ -10097,7 +10097,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6c3af872-184c-4a67-bf42-c2d2a15df546")
 		(property "Reference" "Y1"
 			(at 213.36 82.6768 90)
@@ -10107,8 +10106,8 @@
 				)
 			)
 		)
-		(property "Value" "Crystal_GND24"
-			(at 213.36 85.2168 90)
+		(property "Value" "C9002"
+			(at 201.676 81.788 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10596,7 +10595,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "100nf"
 			(at 363.22 21.5962 0)
 			(effects
 				(font
@@ -11276,7 +11275,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "100nf"
 			(at 309.88 21.5962 0)
 			(effects
 				(font
@@ -11636,7 +11635,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "100nf"
 			(at 387.35 21.5962 0)
 			(effects
 				(font
@@ -11841,7 +11840,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "100nf"
 			(at 345.44 21.5962 0)
 			(effects
 				(font
@@ -12179,7 +12178,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "100nf"
 			(at 370.84 21.5962 0)
 			(effects
 				(font
@@ -12383,7 +12382,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "100nf"
 			(at 396.24 21.5962 0)
 			(effects
 				(font
@@ -13490,7 +13489,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1uf"
+		(property "Value" "100nf"
 			(at 117.602 40.386 90)
 			(effects
 				(font
@@ -13693,7 +13692,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "C720477"
 			(at 218.44 30.48 0)
 			(effects
 				(font
