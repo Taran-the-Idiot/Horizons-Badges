@@ -72,9 +72,11 @@ I turned the screenshot of the preview into a reverse silkscreen footprint so I 
 
 ![image](https://cdn.hackclub.com/019e9bf1-4bef-7af0-afa9-2db4fc9ec15d/Screen%20Shot%202026-05-30%20at%2011.40.33%20am.png)
 
+im placing the usb at an angle on the bottom left so it can avoid the e ink and also avoid an overglade situation where the e ink was pressed against the usbc port and broke
 
+![image](https://cdn.hackclub.com/019e9c01-7d4d-7cb8-81b4-1da391f23141/Screen%20Shot%202026-05-30%20at%2011.47.29%20am.png)
 
-
+So the traces are like very scuffed because I have it at a 35 degree angle. ts is stupidly difficult to trace and manage too
 
 
 
@@ -83,9 +85,75 @@ I turned the screenshot of the preview into a reverse silkscreen footprint so I 
 
 Screw it im just gonna move it here
 
-`insert noooovanish gif here`
+its pretty close to the e ink but thats a problem for later me
 
 (the silkscreen rectangle is an outline of the eink screen btw. I use it to get a scale of reference for stuff)
+
+![image](https://cdn.hackclub.com/019e9c03-3d2a-72d0-b88b-b6af5b755b3c/Screen%20Shot%202026-05-30%20at%2012.13.13%20pm.png)
+
+okay so when i made that last one, i used kicads image to footprint converter to give it a set height of 100mm but i forgot to account for the fact that there was a bunch of padding on either side so the actual workable area became smaller. so I cropped my ss to be nearly touching
+
+
+
+![image](https://cdn.hackclub.com/019e9c0e-6a73-75f5-bac3-73cb83d731c7/Screen%20Shot%202026-05-30%20at%2012.30.56%20pm.png)
+
+gave everything general positions
+
+![image](https://cdn.hackclub.com/019e9c04-f298-7f49-85b9-a063fc83de3c/Screen%20Shot%202026-05-30%20at%2012.14.25%20pm.png)
+
+I now have a ton more clearance and a ton more space between the usbc and the E ink
+
+
+
+![image](https://cdn.hackclub.com/019e9c0c-ab7b-7721-927b-d75ad9704b05/Screen%20Shot%202026-05-30%20at%2012.27.45%20pm.png)
+
+changed the resistance on the idicator led from 2.2 ohms to 2.2k ohms. I am no longer putting 2 amps of current through a led
+
+
+![image](https://cdn.hackclub.com/019e9c0d-c2e2-7a5a-bcab-5bf16d18e29b/Screen%20Shot%202026-05-30%20at%201.04.09%20pm.png)
+
+Positioned the parts for the e ink part and got them ready to route
+
+![image](https://cdn.hackclub.com/019e9c0f-b148-72c5-98f4-399001e7d170/Screen%20Shot%202026-05-30%20at%201.06.41%20pm.png)
+
+![image](https://cdn.hackclub.com/019e9c10-2bba-72f1-ba2b-204ef1ac7689/Screen%20Shot%202026-05-30%20at%201.13.12%20pm.png)
+
+positioned the decoupling caps and resistors for the 2040
+
+
+![image](https://cdn.hackclub.com/019e9c10-9243-7c6f-8302-8a6764a1eddb/Screen%20Shot%202026-05-30%20at%201.16.40%20pm.png)
+
+And there are the rest of the caps and the crystal
+
+
+![image](https://cdn.hackclub.com/019e9c10-f1d8-7d1d-80e1-1ba9074df2e9/Screen%20Shot%202026-05-30%20at%201.22.10%20pm.png)
+
+I moved the whole 2040 up and under the screen becaude there is easier pin access to it that way and there is also easier positioning for the flash since needs to be under the 2040 or else it needs to cross the data lines
+
+
+![image](https://cdn.hackclub.com/019e9c12-cd44-7dc2-aa9c-94c25f59dc7d/Screen%20Shot%202026-05-30%20at%201.41.02%20pm.png)
+
+
+Routed the ldo, flash and decoupling caps
+
+
+
+
+
+![image](https://cdn.hackclub.com/019e9c12-4220-7bf9-87a5-3605b2bb110d/Screen%20Shot%202026-05-30%20at%201.41.06%20pm.png)
+
+And also did the usbc
+
+![image](https://cdn.hackclub.com/019e9c13-d5a5-7385-a6f5-b2b3ab99f3dd/Screen%20Shot%202026-05-30%20at%202.00.45%20pm.png)
+
+routed the data lines to the microcontroller. I had to use 2 vias and rmove the decoupling cap because they wouldnt all fit
+
+
+![image](https://cdn.hackclub.com/019e9c25-26d5-7c0c-9f3a-3c652d6246a7/Screen%20Shot%202026-05-30%20at%202.11.48%20pm.png)
+
+
+
+
 
 
 ## 31st of May
