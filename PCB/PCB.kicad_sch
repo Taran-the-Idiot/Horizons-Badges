@@ -9247,7 +9247,7 @@
 				)
 			)
 		)
-		(property "Value" "90"
+		(property "Value" "22"
 			(at 33.02 96.52 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13680,7 +13680,7 @@
 				)
 			)
 		)
-		(property "Value" "90"
+		(property "Value" "22"
 			(at 32.766 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
