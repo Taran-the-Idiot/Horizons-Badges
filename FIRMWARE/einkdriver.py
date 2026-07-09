@@ -3,8 +3,8 @@ import framebuf
 import utime
 
 # Display resolution
-EPD_WIDTH       = 152
-EPD_HEIGHT      = 296
+EPD_WIDTH       = 184
+EPD_HEIGHT      = 360
 
 RST_PIN         = 6
 DC_PIN          = 7
@@ -32,7 +32,7 @@ WF_PARTIAL_2IN66 =[
 ]
 
 class EPD:
-    def __init__(self, spi=None, sck_pin=9, mosi_pin=10, miso_pin=None, rst_pin=RST_PIN, dc_pin=DC_PIN, cs_pin=CS_PIN, busy_pin=BUSY_PIN):
+    def __init__(self, spi=None, sck_pin=9, mosi_pin=10, miso_pin=20, rst_pin=RST_PIN, dc_pin=DC_PIN, cs_pin=CS_PIN, busy_pin=BUSY_PIN):
         self.reset_pin = Pin(rst_pin, Pin.OUT)
         self.busy_pin = Pin(busy_pin, Pin.IN, Pin.PULL_UP)
         self.cs_pin = Pin(cs_pin, Pin.OUT)
@@ -86,15 +86,7 @@ class EPD:
         self.spi.write(bytearray(buf))
         self.cs_pin(1)
         
-    def ReadBusy(self, timeout_ms=10000):
-        print('e-Paper busy')
-        start = utime.ticks_ms()
-        while self.busy_pin.value() == 0:
-            if utime.ticks_diff(utime.ticks_ms(), start) > timeout_ms:
-                print('e-Paper busy timeout')
-                return False
-            utime.sleep_ms(50)
-        print('e-Paper busy release')
+    def ReadBusy(self, timeout_ms=2000):
         return True
         
     def TurnOnDisplay(self):
