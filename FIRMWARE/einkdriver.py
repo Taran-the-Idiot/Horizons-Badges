@@ -32,16 +32,22 @@ WF_PARTIAL_2IN66 =[
 ]
 
 class EPD:
-    def __init__(self):
-        self.reset_pin = Pin(RST_PIN, Pin.OUT)
-        self.busy_pin = Pin(BUSY_PIN, Pin.IN, Pin.PULL_UP)
-        self.cs_pin = Pin(CS_PIN, Pin.OUT)
+    def __init__(self, spi=None, sck_pin=9, mosi_pin=10, miso_pin=None, rst_pin=RST_PIN, dc_pin=DC_PIN, cs_pin=CS_PIN, busy_pin=BUSY_PIN):
+        self.reset_pin = Pin(rst_pin, Pin.OUT)
+        self.busy_pin = Pin(busy_pin, Pin.IN, Pin.PULL_UP)
+        self.cs_pin = Pin(cs_pin, Pin.OUT)
         self.width = EPD_WIDTH
         self.height = EPD_HEIGHT
         self.lut = WF_PARTIAL_2IN66
 
-        self.spi = SoftSPI(baudrate=1_000_000, polarity=0, phase=0, sck=Pin(15), mosi=Pin(16), miso=Pin(20))
-        self.dc_pin = Pin(DC_PIN, Pin.OUT)
+        if spi is None:
+            if miso_pin is None:
+                self.spi = SoftSPI(baudrate=1_000_000, polarity=0, phase=0, sck=Pin(sck_pin), mosi=Pin(mosi_pin))
+            else:
+                self.spi = SoftSPI(baudrate=1_000_000, polarity=0, phase=0, sck=Pin(sck_pin), mosi=Pin(mosi_pin), miso=Pin(miso_pin))
+        else:
+            self.spi = spi
+        self.dc_pin = Pin(dc_pin, Pin.OUT)
         
         self.buffer_Landscape = bytearray(self.height * self.width // 8)
         self.buffer_Portrait = bytearray(self.height * self.width // 8)
@@ -80,13 +86,16 @@ class EPD:
         self.spi.write(bytearray(buf))
         self.cs_pin(1)
         
-    def ReadBusy(self):
+    def ReadBusy(self, timeout_ms=10000):
         print('e-Paper busy')
-        utime.sleep_ms(100)   
-        while(self.busy_pin.value() == 1):      # 0: idle, 1: busy
-            utime.sleep_ms(100)    
+        start = utime.ticks_ms()
+        while self.busy_pin.value() == 0:
+            if utime.ticks_diff(utime.ticks_ms(), start) > timeout_ms:
+                print('e-Paper busy timeout')
+                return False
+            utime.sleep_ms(50)
         print('e-Paper busy release')
-        utime.sleep_ms(100)  
+        return True
         
     def TurnOnDisplay(self):
         self.send_command(0x20)        
