@@ -11,5 +11,6 @@
     ],
     "python.analysis.extraPaths": [
         "~/.micropico-stubs/included"
-    ]
+    ],
+    "terminal.integrated.defaultProfile.osx": "zsh"
 }
