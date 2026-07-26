@@ -332,7 +332,30 @@ I went and changed up the names for everything on my schematic to include lcsc p
 
 Need to get another review now
 
-Time spent: 4 hours
+![alt text](<Screen Shot 2026-06-06 at 8.05.54 pm.png>)
 
+I changed the power pour a bit to get rid of the risk of a shot on the solder mask cutout there and then rerouted stuff accordingly
+
+
+
+Time spent: 4.5 hours
+
+
+# July 8th
+
+Spent 1 hour on firmware. I was using both [this code by nimit](https://github.com/nimitvijayvargee/overgladebadgefw) and the [waveshare micropython driver](https://github.com/waveshareteam/Pico_ePaper_Code) but could not get it to work well.
+
+Time Spent: 1 hour
+
+# July 9th
+
+Spent 2 more hours on firmware.
+
+
+![image](https://cdn.hackclub.com/019f9cff-1cfc-7b23-b216-6eb6694e1e10/paste-1785045343039.png)
+
+I kept running into this issue where not all the pixels would be responsive. I spent a while trying to debug this to no avail. I eventually just gave up and on the event day, nathan(notaroomba) went and clauded up a solution [https://badge-paint.notaroomba.dev/](https://badge-paint.notaroomba.dev/)
+
+Time Spent: 2 hours
 
 
