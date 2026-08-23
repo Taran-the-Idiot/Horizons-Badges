@@ -2,7 +2,7 @@
 
 
 
-total time spent: 22 hours
+total time spent: 23.5 hours
 
 ## 29th of May
 

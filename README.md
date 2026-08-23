@@ -4,7 +4,14 @@
 
 E-ink badges for Horizons Crux! Made in Kicad. They use 2.66" E-ink screens with an RP2040 mcu. And they are made in the shape of a mantaray :D
 
+Just use a piece of double sided tape to secure down the screen and you are good to go!
+
 Features: 
+
+- usbC connector
+- 2.66" E-ink
+- No battery required
+- Has a lanyard hole
 
 ## Schematic
 
