@@ -2,7 +2,7 @@
 
 ![image](https://cdn.hackclub.com/019f9d0b-af3d-7e0b-ad1c-14d1e6c94284/1000002511%201.png)
 
-E-ink badges for Horizons Crux! Made in Kicad. They use 2.66" E-ink screens with an RP2040 mcu.
+E-ink badges for Horizons Crux! Made in Kicad. They use 2.66" E-ink screens with an RP2040 mcu. And they are made in the shape of a mantaray :D
 
 Features: 
 
@@ -10,11 +10,16 @@ Features:
 
 ![image](https://cdn.hackclub.com/01a021b3-5ee6-7313-8f04-26008c431219/Screenshot%202026-08-21%20at%2010.22.52%E2%80%AFam.png)
 
-Here is the 
+Here is the schematic for this board. It is a normal rp2040 microcontroller with an E-ink driver integrated into it. 
 
 
 ## PCB
 
+![image](https://cdn.hackclub.com/01a02edc-6a6e-725d-a43d-91a9873c54db/Screenshot%202026-08-23%20at%2011.42.57%E2%80%AFpm.png)
+
+Here is the pcb layout and design. This is a 2 layer board that has a ground pour, as well as a 3v3 pour on the top side over where the mcu electronics are. 
+
+The files for the individual art sections can be found labelled in the [/art](/art) directory.
 
 
 ### Art
